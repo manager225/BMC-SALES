@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<section class="main">
+  <div class="container">
+    <div class="header">
+      <a href="#" class="header__login" data-toggle="modal" data-target="#logIn">Вход на сайт <i
+          class="fa fa-lock header__icon"></i></a>
+    </div>
+  </div>
+  <div class="navbar-section">
+    <div class="container">
+      <nav class="navbar navbar-light">
+        <ul class="navbar__list">
+          <li class="navbar__list__item">
+            <a class="navbar-brand">
+              <img src="./image/logo.png" alt="logo" class="navbar-section__logo">
+            </a>
+          </li>
+          <li class="navbar__list__item">
+            <span class="title">BMC SALES</span> <br>
+            <span class="subtitle">партнерская сеть продаж</span>
+          </li>
+        </ul>
+        <ul class="navbar__links">
+          <li><a href="#">Объявления</a></li>
+          <li><a href="#">Каталоги</a></li>
+          <li><a href="#">Участники</a></li>
+          <li><a href="#">Партнеры</a></li>
+          <li><a href="#">О платформе</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><i class="fa fa-search" aria-hidden="true"></i></li>
+          <li class="like card-ribbon__like"><a href="" class="card-subribbon__like color-transp__like"><i
+              class="far fa-heart " aria-hidden="true"></i><span>5</span></a></li>
+          <li class="cart card-ribbon__cart"><a href="#" class=" card-subribbon__cart color-transp__cart"><i
+              class="fa fa-shopping-bag" aria-hidden="true"></i> <span>1</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="slick-container">
+          <div class="slick-wrapper">
+            <div class="slick-slide"><img src="image/backpack/green/backpack-1-green.jpg" alt="backpack"></div>
+            <div class="slick-slide"><img src="image/backpack/green/backpack-2-green.jpg" alt="backpack"></div>
+            <div class="slick-slide"><img src="image/backpack/green/backpack-3-green.jpg" alt="backpack"></div>
+            <div class="slick-slide"><img src="image/backpack/green/backpack-4-green.jpg" alt="backpack"></div>
+            <div class="slick-slide"><img src="image/backpack/green/backpack-5-green.jpg" alt="backpack"></div>
+          </div>
+
+          <div class="slick-wrapper-low">
+            <div class="slick-slide-low"><img src="image/backpack/green/backpack-1-low-green.jpg" alt="backpack"></div>
+            <div class="slick-slide-low"><img src="image/backpack/green/backpack-2-low-green.jpg" alt="backpack"></div>
+            <div class="slick-slide-low"><img src="image/backpack/green/backpack-3-low-green.jpg" alt="backpack"></div>
+            <div class="slick-slide-low"><img src="image/backpack/green/backpack-4-low-green.jpg" alt="backpack"></div>
+            <div class="slick-slide-low"><img src="image/backpack/green/backpack-5-low-green.jpg" alt="backpack"></div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-7">
+        <div class="product-info">
+          <h2 class="product-info__title mr-auto">Рюкзак PUMA</h2>
+          <p class="product-info__rating mb-0 mr-2">просмотров: <span>200</span>
+          <form action="#">
+            <div class="simple-rating">
+              <div class="simple-rating__items">
+                <input type="radio" id="simple-rating__5" class="simple-rating__item" name="simple-rating" value="5">
+                <label for="simple-rating__5" class="simple-rating__label"></label>
+
+                <input type="radio" id="simple-rating__4" class="simple-rating__item" name="simple-rating" value="4">
+                <label for="simple-rating__4" class="simple-rating__label"></label>
+
+                <input type="radio" checked id="simple-rating__3" class="simple-rating__item" name="simple-rating"
+                       value="3">
+                <label for="simple-rating__3" class="simple-rating__label"></label>
+
+                <input type="radio" id="simple-rating__2" class="simple-rating__item" name="simple-rating" value="2">
+                <label for="simple-rating__2" class="simple-rating__label"></label>
+
+                <input type="radio" id="simple-rating__1" class="simple-rating__item" name="simple-rating" value="1">
+                <label for="simple-rating__1" class="simple-rating__label"></label>
+              </div>
+            </div>
+          </form>
+          </p>
+        </div>
+
+        <div class="product-price">
+          <p class="price">5000.00 <span>KZT/шт</span></p>
+          <p class="quantity">В наличии на складе: <span>(1)</span></p>
+        </div>
+
+        <div class="product-color">
+          <span class="product-color__title">Цвет:</span>
+          <div class="product-color__list">
+
+            <label class="product-colored product-color__active">
+              <input type="radio" name="color" value="green" onchange="check_value(event)" checked>
+              <span class="product-color__green"></span>
+              <span class="name-color">Зеленый</span>
+            </label>
+
+            <label class="product-colored product-color__no-active">
+              <input type="radio" name="color" value="yellow" onchange="check_value(event)">
+              <span class="product-color__yellow"></span>
+              <span class="name-color">Желтый</span>
+            </label>
+
+            <label class="product-colored product-color__no-active">
+              <input type="radio" name="color" value="red" onchange="check_value(event)">
+              <span class="product-color__red"></span>
+              <span class="name-color">Красный</span>
+            </label>
+
+            <label class="product-colored product-color__no-active">
+              <input type="radio" name="color" value="blue" onchange="check_value(event)">
+              <span class="product-color__blue"></span>
+              <span class="name-color">Синий</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="product-delivery">
+          <p>Способ доставки:</p>
+          <div class="product-delivery__variants">
+            <div class="tabs">
+              <input type="radio"
+                     name="tab-btn"
+                     id="tab-btn-1"
+                     class="radio"
+                     value=""
+                     checked>
+              <label for="tab-btn-1"
+                     class="tabs__title">
+                <span class="castom-radio"></span>
+                Самовывоз
+              </label>
+
+
+              <input type="radio"
+                     name="tab-btn"
+                     id="tab-btn-2"
+                     class="radio"
+                     value="">
+              <label for="tab-btn-2"
+                     class="tabs__title">
+                <span class="castom-radio"></span>
+                Доставка
+              </label>
+
+              <div id="content-1">
+                <p>Пункты самовывоза</p>
+
+                <span class="point-group">
+                  <label class="point">
+                    <input type="radio" name="point" checked>
+                    <span class="castom-radio"></span>
+                    <span class="text">Мангеликель 17 ЖК Коркем (Мангеликель 17)</span>
+                  </label>
+
+                  <label class="point">
+                    <input type="radio" name="point">
+                    <span class="castom-radio"></span>
+                    <span class="text">Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)</span>
+                  </label>
+                </span>
+
+
+              </div>
+
+              <div id="content-2">
+                <p>Пункты доставки</p>
+
+                <label class="point">
+                  <input type="radio" name="delivery" checked>
+                  <span class="castom-radio"></span>
+                  <span class="text">Мангеликель 17 ЖК Коркем (Мангеликель 17)</span>
+                </label>
+
+                <label class="point">
+                  <input type="radio" name="delivery">
+                  <span class="castom-radio"></span>
+                  <span class="text">Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="product-action">
+          <button class="btn cart" data-toggle="modal" data-target="#addInCart">
+            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            Добавить в корзину
+          </button>
+
+          <button class="btn favorite" data-toggle="modal" data-target="#addInFavorite">
+            <i class="far fa-heart" aria-hidden="true"></i>
+            В избранное
+          </button>
+
+          <button class="btn opt ml-auto">Оптовые предложения</button>
+        </div>
+
+        <div class="product-footer">
+          <p class="product-footer__cart">Товаров в корзине: <span>1</span></p>
+          <p class="product-footer__favorite">В избранном: <span>5</span></p>
+          <p class="ml-auto product-footer__social"><span>Поделиться товаром:</span>
+          <ul class="social">
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-vk"></i></li>
+            <li><i class="fab fa-odnoklassniki"></i></li>
+            <li><i class="fab fa-google-plus-g"></i></li>
+            <li><i class="fab fa-linkedin-in"></i></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--***************************  MODALS  ***************************-->
+
+<!--  MODAL ADD IN CART -->
+<div class="modal fade" id="addInCart" tabindex="-1" aria-labelledby="addInCartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addInCartModalLabel">Товар добавлен в корзину</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex">
+        <div class="img"><img src="" alt="product"></div>
+        <div class="description">
+          <p>Название: <span></span></p>
+          <p>Цвет: <span class="colProd"></span></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn modal-footer__btn-continue" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn modal-footer__btn-goCart">Перейти в корзину</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  MODAL ADD IN FAVORITE -->
+<div class="modal fade" id="addInFavorite" tabindex="-1" aria-labelledby="addInFavoriteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addInFavoriteModalLabel">Товар добавлен в избранное</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body d-flex">
+        <p>Товар успешно добавлен в список избранных</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn modal-footer__btn-continue" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn modal-footer__btn-goCart">Перейти в список избранных</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  MODAL LOGIN -->
+<div class="modal fade" id="logIn" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logInModalLabel">Вход на сайт</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <span class="message"></span>
+          <div class="form-group">
+            <label for="userLogin">Логин</label>
+            <input type="text"
+                   class="form-control__userLogin form-control"
+                   id="userLogin"
+                   required
+                   placeholder="Login"
+            >
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Пароль</label>
+            <input type="password"
+                   required
+                   class="form-control__userPass form-control"
+                   id="exampleInputPassword1"
+                   placeholder="Password"
+            >
+            <div class="helper">
+              <small class="form-text text-muted">Длина пароля должна быть не менее 5 символов</small>
+              <small class="form-text text-muted">Содержать хотя бы одну цифру</small>
+              <small class="form-text text-muted">Содержать хотя бы одну прописную букву</small>
+              <small class="form-text text-muted">Содержать хотя бы одну строчную букву</small>
+              <small class="form-text text-muted">Содержать хотя бы один символ "#$%& </small>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email"
+                   class="form-control__userEmail form-control"
+                   id="exampleInputEmail1"
+                   aria-describedby="emailHelp"
+                   placeholder="name@example.com"
+                   required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="userPhone">Телефон</label>
+            <input type="text"
+                   class="form-control__userPhone form-control"
+                   id="userPhone"
+                   placeholder="+7 900 000 00 00"
+                   required
+            >
+          </div>
+          <button type="submit" class="btn btn-primary btn__subm">Войти</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/dc3e5c906e.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
