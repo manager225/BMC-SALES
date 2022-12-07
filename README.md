@@ -1,6 +1,6 @@
 # BMC-SALES
 Карточка товара рюкзаков в интернет магазине
-## Демо: [manager225.github.io/bmc-sales/](manager225.github.io/bmc-sales/)
+## Демо: [https://manager225.github.io/BMC-SALES/](https://manager225.github.io/BMC-SALES/)
 ## Вертка карточки товара по макету. Без адаптива. Подключен SLICK-SWIPER, реализовано: счетчик добавления товара в корзину и в избранное, попап с данными товара при добавлении его в корзину, звездный рейтинг, табы, форма регистрации с валидацией полей.
 
 ## ![Imgur](./image/gif/work_site.gif)
